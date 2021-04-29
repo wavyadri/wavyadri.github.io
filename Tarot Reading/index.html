@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tarot Reading - 3 Card Spread</title>
+</head>
+<body>
+    <header>
+        <h1>Daily Tarot Reading</h1>
+    </header>
+    <ol>
+        <li>Set your intentions for the reading.</li>
+        <li>When you are ready, click "Begin".</li>
+        <li>If you wish to redraw, click "Start Again".</li>
+        <li>Click "Begin" again for a new reading.</li>
+    </ol>
+    <div class="buttons">
+        <button class="btn-begin">Begin</button>
+        <button class="btn-restart">Start Again</button>
+    </div>
+        <div class="all-cards">
+            <div class="card past">
+                <h2>Past</h2>
+                <div class="holder" id="past">
+                    <i class="far fa-moon fa-3x"></i>  
+                </div>
+                <div class="name-past"></div>
+            </div>
+            <div class="card present">
+                <h2>Present</h2>
+                <div class="holder" id="present">
+                    <i class="far fa-sun fa-3x"></i>  
+                </div>
+                <div class="name-past"></div>
+            </div>
+            <div class="card future">
+                <h2>Future</h2>
+                <div class="holder" id="future">
+                    <i class="far fa-star fa-3x"></i>
+                </div>
+                <div class="name-past"></div>
+            </div>
+        </div>
+    <div id="all_cards"></div>
+    <footer>
+        <p>Created by <a target="_blank" href="https://wavyadri.github.io/">Adriana Calvo-Matos</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

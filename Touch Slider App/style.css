@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Playfair Display", serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #3c341f;
+  color: #daddd8;
+  line-height: 1.7;
+}
+
+.slider-container {
+  height: 100vh;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.slide {
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  user-select: none;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 70%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  /* margin-bottom: 0.2rem; */
+}
+
+.slide h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.slide h4 {
+  font-size: 1.3rem;
+}
+
+.btn {
+  color: #111;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  /*       top  sides  */
+  border-radius: 1rem;
+  background-color: #daddd8;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide img {
+  transform: scale(0.9);
+}

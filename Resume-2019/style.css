@@ -1,0 +1,177 @@
+/* Dark Mode */
+.dark-mode {
+    background-color: #18191a;
+    /* background-color: #1e1e1e; lighter*/
+    color: white;
+}
+
+.dark-mode .pop {
+    color: #c584b1;
+}
+
+.dark-mode .btn {
+    background: #c584b1;
+}
+.dark-mode .short-border:before {
+    background: white;
+}
+
+.dark-mode .long-border:before {
+    background:white;
+}
+
+/* Keywords that stand out */
+.pop {
+    color: blueviolet;
+}
+
+li .pop {
+    font-weight: bold;
+    display: inline;
+}
+
+/* Buttons */
+.btn {
+    background: blueviolet;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background:black;
+}
+
+/* Email */
+.btn-1 {
+    padding: 2px 32.5px;
+    margin-right: 2px;
+    border-bottom: 2px;
+}
+
+/* LinkedIn */
+.btn-2 {
+    padding: 2px 22px;
+    margin-right: 2px;
+}
+
+/* Portfolio */
+.btn-3 {
+    padding: 2px 21px;
+    margin-right: 2px;
+}
+
+/* Toggle Dark Mode */
+.btn-4 {
+    padding: 2px 9px;
+    /* margin-bottom: 4px; */
+}
+
+/* PDF Resume */
+.btn-5 {
+    padding: 2px 7px;
+}
+
+/* Text Styles */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size:18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.small
+{
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    color: inherit;
+}
+h1, h2 {
+    font-family: ‘Raleway’, sans-serif;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.date {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+/* My approach... */
+.shout-out {
+    font-size: 20px;
+    margin-top: 19px;
+}
+ 
+/* Dividing lines */
+.short-border:before {
+    background: black;
+    display: block;
+    content: '';
+    height: 2px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    width: 40px;
+}
+
+.long-border:before {
+    background: black;
+    display: block;
+    content: '';
+    height: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Top of page padding */
+.top-padding {
+    margin-top: 20px;
+}
+
+/* Media Queries - this point and above*/
+@media (max-width: 992px){
+   
+}
+
+@media (max-width: 768px){
+    .small {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px){
+    .short-border:before {
+        display: none;
+    }
+
+    .xs-size {
+        width: 50%;;
+    }
+
+    .btn-1, .btn-2, .btn-3 {
+        margin-bottom: 5px;
+    }
+
+}
+
+            

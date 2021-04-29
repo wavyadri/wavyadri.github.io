@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Astloch:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+$black: #131313;
+$cream: #e3e4db;
+$primary: #826aed;
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin centre {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin title {
+  text-align: center;
+  font-family: "Astloch", cursive;
+  color: $black;
+}
+
+@mixin button {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  margin: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include flex-col();
+  @include centre();
+  background-color: $cream;
+  padding-bottom: 5vh;
+}
+
+header {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  @include title();
+}
+
+ol {
+  margin: 10px;
+}
+
+p,
+li {
+  font-family: "Open Sans", sans-serif;
+  color: $black;
+}
+
+button {
+  @include button();
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn-begin {
+  color: $cream;
+  background-color: $primary;
+}
+
+.btn-restart {
+  color: $cream;
+  background-color: $black;
+}
+
+.all-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.5rem;
+  margin: 10px;
+
+  .present {
+    margin-top: 3rem;
+  }
+
+  .card {
+    @include centre();
+
+    .holder {
+      height: 450px;
+      width: 320px;
+      border: 2px solid $black;
+      margin-top: 1rem;
+      background-color: $black;
+      color: $cream;
+      @include flex-col();
+      @include centre();
+      //   justify-content: center;
+      overflow: hidden;
+
+      i {
+        color: $cream;
+      }
+
+      .tarot-box {
+        @include flex-col();
+        // @include centre();
+        text-align: center;
+        padding: 20px;
+        h2,
+        p {
+          color: $cream;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  @include centre();
+  bottom: 0;
+  height: 5vh;
+  min-width: 100%;
+  position: fixed;
+  background: $black;
+  color: $cream;
+
+  p {
+    color: $cream;
+  }
+
+  a {
+    text-decoration: none;
+    color: $cream;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .all-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3.5rem;
+    .present {
+      margin-top: 0rem;
+    }
+  }
+}
