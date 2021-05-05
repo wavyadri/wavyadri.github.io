@@ -18,11 +18,6 @@ async function formSubmit(e) {
     e.preventDefault();
 
     const inputValue = input.value.trim();
-    // if event triggered without input by user
-    if(inputValue.length === 0) {
-        createNoMatch();
-        return 0;
-    }
     clearInput(input);
     // clear output html
     clearHTML(searchResults);
@@ -73,7 +68,7 @@ async function formSubmit(e) {
 }
 
 async function getUni(inputValue) {
-    const endpoint = `http://universities.hipolabs.com/search?{"$or":[{"name":"${inputValue}"},{"country":"${inputValue}"}]}`;
+    const endpoint = `https://universities.hipolabs.com/search?{"$or":[{"name":"${inputValue}"},{"country":"${inputValue}"}]}`;
     const response = await fetch(endpoint);
     if (!response.ok) {
         throw Error(respone.statusText);
