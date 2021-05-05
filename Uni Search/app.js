@@ -94,7 +94,7 @@ function createNoMatch() {
 // Output results in HTML
 function createUniResults(matches) {
     matches.forEach(result => {
-        // const url = `${result['web_pages'][0]}`;
+        const url = `${result['web_pages'][0]}`;
         const uniMatch = document.createElement('div');
         uniMatch.classList.add('uni-match');
         uniMatch.innerHTML = `
@@ -102,7 +102,7 @@ function createUniResults(matches) {
                 <div class="result-title">
                     <h3>${result.name} | ${result.country}</h3>
                 </div>
-                <a href="" class="uni-match-link" target="_blank" rel="noopener">test</a>
+                <a href="${url}" class="uni-match-link" target="_blank" rel="noopener">${url}</a>
             </div>
           `;
         searchResults.appendChild(uniMatch);
