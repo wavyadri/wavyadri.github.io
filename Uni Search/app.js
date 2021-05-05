@@ -18,6 +18,11 @@ async function formSubmit(e) {
     e.preventDefault();
 
     const inputValue = input.value.trim();
+    // if event triggered without input by user
+    if(inputValue.length === 0) {
+        createNoMatch();
+        return 0;
+    }
     clearInput(input);
     // clear output html
     clearHTML(searchResults);
