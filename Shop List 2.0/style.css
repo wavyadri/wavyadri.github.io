@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Open+Sans&display=swap");
+.fill-in {
+  outline: none !important;
+  border: 2px solid #e63946;
+}
+
+.done {
+  color: #2afc98 !important;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.hidden {
+  display: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #011627;
+  padding-bottom: 6vh;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-family: "Bungee Shade", cursive;
+  font-size: 3rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h2,
+p,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input {
+  height: 30px;
+  width: 375px;
+  margin-right: 15px;
+  border: 2px solid #011627;
+  text-indent: 5px;
+}
+
+button {
+  border: none;
+  text-align: center;
+  border: 1px solid #011627;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #f0eff4;
+  color: #011627;
+  font-size: 1rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+  -webkit-box-shadow: -5px 5px 0px #011627;
+          box-shadow: -5px 5px 0px #011627;
+}
+
+.shopping-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.shopping-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  height: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.shopping-list .list .js-remove {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+  margin-right: 3px;
+  color: #e63946;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.shopping-list .list .js-remove:hover {
+  -webkit-transform: translate(3px, -3px);
+          transform: translate(3px, -3px);
+  text-shadow: -3px 3px 0px #011627;
+}
+
+.shopping-list .list .list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-list .list .list-items .js-done {
+  padding: 15px;
+  color: #7c8483;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.shopping-list .list .list-items .js-done:hover {
+  -webkit-transform: translate(3px, -3px);
+          transform: translate(3px, -3px);
+  text-shadow: -3px 3px 0px #011627;
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: #011627;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  color: #7c8483;
+}
+
+footer a {
+  color: #7c8483;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f0eff4;
+}
+/*# sourceMappingURL=style.css.map */
