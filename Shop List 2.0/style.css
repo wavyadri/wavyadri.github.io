@@ -51,7 +51,6 @@ h1 {
 }
 
 h2 {
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -199,6 +198,34 @@ button:hover {
   text-shadow: -3px 3px 0px #011627;
 }
 
+.empty-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  margin-top: 20px;
+}
+
+.shopping-list:empty {
+  display: none;
+}
+
+.shopping-list:empty + .empty-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 footer {
   height: 5vh;
   width: 100vw;
@@ -228,5 +255,50 @@ footer a {
 
 footer a:hover {
   color: #f0eff4;
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  i {
+    font-size: 1.6rem !important;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  form input {
+    height: 30px;
+    width: 300px;
+    margin-right: 0px;
+  }
+  form button {
+    display: block;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .shopping-list .list {
+    width: 300px;
+    height: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

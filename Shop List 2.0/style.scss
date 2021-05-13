@@ -77,7 +77,6 @@ h1 {
 }
 
 h2 {
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -153,6 +152,20 @@ button:hover {
   }
 }
 
+.empty-state {
+  @include flex-col();
+  display: none;
+  margin-top: 20px;
+}
+
+.shopping-list:empty {
+  display: none;
+}
+
+.shopping-list:empty + .empty-state {
+  display: flex;
+}
+
 footer {
   height: 5vh;
   width: 100vw;
@@ -173,6 +186,48 @@ footer {
     text-decoration: none;
     &:hover {
       color: $primary;
+    }
+  }
+}
+
+// Mobile Responsive
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  i {
+    font-size: 1.6rem !important;
+  }
+
+  form {
+    @include flex-col();
+
+    input {
+      height: 30px;
+      width: 300px;
+      margin-right: 0px;
+    }
+    button {
+      display: block;
+      font-size: 0.9rem;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .shopping-list {
+    .list {
+      width: 300px;
+      height: 20px;
     }
   }
 }
