@@ -14,8 +14,8 @@ const fetchTarot = async () => {
 const getTarot = async () => {
   const endpoint = "https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3";
   const response = await fetch(endpoint);
-  const tarot = await response.json();
   console.log('fetching...')
+  const tarot = await response.json();
   clear();
   createTarotCard(tarot);
 }
