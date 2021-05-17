@@ -68,7 +68,7 @@ async function formSubmit(e) {
 }
 
 async function getUni(inputValue) {
-    const endpoint = `http://universities.hipolabs.com/search?{"$or":[{"name":"${inputValue}"},{"country":"${inputValue}"}]}`;
+    const endpoint = `https://universities.hipolabs.com/search?{"$or":[{"name":"${inputValue}"},{"country":"${inputValue}"}]}`;
     const response = await fetch(endpoint);
     if (!response.ok) {
         throw Error(respone.statusText);
