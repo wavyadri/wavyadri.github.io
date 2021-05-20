@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Oxygen", sans-serif;
+  padding-bottom: 5vh;
+  color: #421820;
+}
+
+header {
+  margin-top: 10px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+form {
+  padding: 20px 20px;
+  border: 2px solid #421820;
+  border-radius: 5px;
+  width: 400px;
+  height: 100%;
+}
+
+form input {
+  height: 30px;
+  text-indent: 5px;
+}
+
+form .input-group {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .input-group label {
+  margin-bottom: 5px;
+}
+
+form .input-group #submit {
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+form .priv {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  margin: 40px 0px;
+}
+
+form .priv input {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: #421820;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  color: #f2e3bc;
+}
+
+footer a {
+  color: #f2e3bc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #cd5d67;
+}
+
+.err {
+  color: #e63946;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.submit-err {
+  color: #e63946;
+  font-size: 12px;
+  padding: 3px 3px 0px 3px;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    margin: 10px;
+  }
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  form {
+    margin-bottom: 5vh;
+    width: 260px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

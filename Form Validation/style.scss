@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+$black: #421820;
+$light: #cd5d67;
+$primary: #f2e3bc;
+$secondary: #663f46;
+$danger: #e63946;
+$success: #2afc98;
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  @include flex-col();
+  font-family: "Oxygen", sans-serif;
+  padding-bottom: 5vh;
+  color: $black;
+}
+
+header {
+  margin-top: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+form {
+  padding: 20px 20px;
+  border: 2px solid $black;
+  border-radius: 5px;
+  width: 400px;
+  height: 100%;
+
+  input {
+    height: 30px;
+    text-indent: 5px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-bottom: 5px;
+    }
+    #submit {
+      margin-bottom: 0px;
+      cursor: pointer;
+    }
+  }
+
+  .priv {
+    justify-content: center;
+    height: 30px;
+    margin: 40px 0px;
+
+    input {
+      height: 15px;
+      width: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: $black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+
+  p {
+    color: $primary;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+      color: $light;
+    }
+  }
+}
+
+.err {
+  color: $danger;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.submit-err {
+  color: $danger;
+  font-size: 12px;
+  padding: 3px 3px 0px 3px;
+}
+
+// Mobile Responsive
+@media screen and (max-width: 450px) {
+  header {
+    margin: 10px;
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+  }
+  form {
+    margin-bottom: 5vh;
+    width: 260px;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <form id="register">
+        <div class="input-group">
+            <label for="pronouns">Pronoun</label>
+            <select name="pronouns" id="pronouns">
+                <option class="js-pronouns" value="none" selected="selected"> -- Select one -- </option>
+                <option class="js-pronouns" value="she">She</option>
+                <option class="js-pronouns" value="he">He</option>
+                <option class="js-pronouns" value="they">They</option>
+                <option class="js-pronouns" value="ze">Ze</option>
+                <option class="js-pronouns" value="ve">Ve</option>
+                <option class="js-pronouns" value="na">Rather not say</option>
+            </select>
+            <div class="pronouns"></div>
+        </div>
+        <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Jane">
+            <div class="first-name"></div>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="jane.doe@gmail.com">
+            <div class="email"></div>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Pa5sw0rd*">
+            <div class="password"></div>
+        </div>
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Pa5sw0rd*">
+            <div class="confirm-password"></div>
+        </div>
+        <div class="input-group priv">
+            <p>Do you accept that your information will be used for nothing?</p>
+            <div class="radios">
+                <label for="yes">Yes</label>
+                <input type="radio" name="yes-no" id="terms-yes">
+                <label for="no">No</label>
+                <input type="radio" name="yes-no" id="terms-no">
+            </div>
+            <div class="privacy"></div>
+        </div>
+        <div class="input-group">
+            <input type="submit" value="Submit" id="submit">
+            <div class="submit"></div>
+        </div>        
+    </form>
+    <footer>
+        <p>Created by <a target="_blank" href="https://wavyadri.github.io/">Adriana Calvo-Matos</a></p>
+    </footer>
+
+    <script src="app-v3.js"></script>
+</body>
+</html>
