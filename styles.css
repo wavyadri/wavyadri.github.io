@@ -236,13 +236,19 @@ i {
   border-radius: 1rem;
 }
 
-.about-toolkit {
+.about-toolkit,
+.about-resume {
   padding-top: 1rem;
 }
 
-.about-toolkit-icons i {
+.about-toolkit-icons i,
+.about-resume-icons i {
   padding: 13px 50px 10px 4px;
   color: var(--primary-color);
+}
+
+.about-resume-icons i:hover {
+  color: var(--accent-1-color);
 }
 
 .flex {
