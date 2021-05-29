@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&family=Open+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #577590;
+  font-family: "Mate SC", serif;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #577590;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#quote-box {
+  padding: 40px 10px;
+  border-radius: 10px;
+  min-height: 200px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 12px 12px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+#quote-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#text {
+  width: 350px;
+  font-size: 30px;
+}
+
+#author {
+  margin-top: 10px;
+  text-align: end;
+}
+
+#quote-buttons {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+#waiting {
+  animation: preloader 1.3s ease-in-out 0s infinite;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes preloader {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 450px) {
+  #quote-box {
+    padding: 30px 10px;
+    width: 290px;
+    box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+  #text {
+    width: 250px;
+    font-size: 20px;
+  }
+
+  #author {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 6px 10px;
+  }
+
+  #quote-buttons {
+    width: 250px;
+  }
+
+  footer {
+    margin-top: 10px;
+  }
+}
