@@ -110,12 +110,11 @@ footer a:hover {
   }
   #text {
     width: 250px;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   #author {
     margin-top: 10px;
-    font-size: 14px;
   }
 
   button {
